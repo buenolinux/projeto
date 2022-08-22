@@ -1,0 +1,27 @@
+SELECT tab_produtos.nome AS 'Nome do produto',
+	tab_categorias.nome AS 'Categoria',
+	tab_marcas.nome AS 'Marca',
+	tab_animais.nome AS 'Animal',
+	tab_fornecedores.nome AS 'Fornecedor'	
+	
+	 
+	
+	FROM tab_produtos
+	
+	INNER JOIN tab_categorias
+	ON tab_produtos.id_categoria = tab_categorias.id_categoria
+
+	INNER JOIN tab_animais
+	ON tab_animais.id_animal = tab_produtos.id_animal
+
+	INNER JOIN tab_marcas
+	ON tab_marcas.id_marca = tab_produtos.id_marca
+
+	INNER JOIN tab_lotes
+	ON tab_lotes.id_lote = tab_produtos.id_lote
+	
+	INNER JOIN tab_pedidos	
+	ON tab_pedidos.id_pedido = tab_lotes.id_pedido
+
+	INNER JOIN tab_fornecedores
+	ON tab_fornecedores.id_fornecedor = tab_pedidos.id_fornecedor;

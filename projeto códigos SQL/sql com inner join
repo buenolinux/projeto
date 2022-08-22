@@ -1,0 +1,8 @@
+Select 
+	tab_funcionarios.nome AS 'Nome funcionário',
+	tab_cargos.nome AS 'Cargo', 
+	tab_departamentos.nome AS 'Departamento'
+  FROM tab_funcionarios 
+INNER JOIN tab_cargos ON tab_funcionarios.id_cargo = tab_cargos.id_cargo 
+INNER JOIN tab_departamentos 
+ON tab_departamentos.id_departamento = tab_cargos.id_departamento;

@@ -1,0 +1,17 @@
+INSERT INTO tab_clientes
+(nome,
+sobrenome,
+cpf,
+rg,
+nascimento,
+sexo,
+email,
+senha,
+cep,
+logradouro,
+numero,
+bairro,
+cidade,
+estado)
+VALUES
+('Manuel','Pereira','222-222-222-11','11.333.111-11','1980-08-20','m','manualpereira@email.com','123','03131-010','Rua Orfanato','316','Vila Prudente','São Paulo','SP');

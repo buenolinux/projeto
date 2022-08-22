@@ -1,0 +1,18 @@
+INSERT INTO tab_produtos
+(nome,
+imagem,
+descricao,
+tamanho,
+unidademedida,
+id_categoria,
+id_animal,
+id_marca,
+id_lote	
+)
+VALUES
+('magnus todo dia','imagem.jpg','A ração Magnus Todo Dia de 15 kg e 25 kg é de qualidade premium e tem sabor especial de carne. Além disso, a comidinha não contém adição de corantes e possui um complexo de ingredientes que promovem mais saúde e bem-estar aos cães.
+Porte da Raça: Peso do Cão (kg)
+Gigante: Acima de 40
+Grande: 25 - 40'
+
+,0,15,1,1,1,1);

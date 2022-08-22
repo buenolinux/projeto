@@ -1,0 +1,37 @@
+COMANDO PARA O BANCO QUE TEM AUTO INCREMENTO NA TABELA ITENS_PEDIDOS
+_____________________
+
+INSERT INTO tab_itens_pedidos
+(id_produto,    quantidade)
+VALUES
+(1,1),
+(3,2);
+____________________
+SELECT tab_produtos.preco, tab_itens_pedidos.quantidade from tab_produtos, tab_itens_pedidos where tab_produtos.id_produto = 1 and tab_itens_pedidos.id_produto = 1 ;
+
+SELECT (tab_produtos.preco * tab_itens_pedidos.quantidade) from tab_produtos, tab_itens_pedidos where tab_produtos.id_produto = 1 and tab_itens_pedidos.id_produto = 1 ;
+
+
+_______________________
+
+ESTE SELECT RETORNA POR MEIO DO INNER JOIN O NOME DOS PRODUTOS QUE SÃO COMUNS  ÀS TABELAS tab_produtos e tab_itens_pedidos 
+
+
+SELECT tab_produtos.id_produto, tab_produtos.nome ,tab_itens_pedidos.id_produto FROM tab_produtos 
+INNER JOIN tab_itens_pedidos
+ON tab_produtos.id_produto = tab_itens_pedidos.id_produto
+
+
+_____________________
+
+SELECT tab_produtos.id_produto  AS 'tab_produtos id', 
+	tab_produtos.nome AS 'Nome do produto',
+	tab_itens_pedidos.id_produto AS 'tab_itens_produtos id'
+	 FROM tab_produtos, tab_itens_pedidos WHERE tab_produtos.id_produto = tab_itens_pedidos.id_produto;
+__________________
+
+SELECT tab_produtos.id_produto, tab_produtos.nome ,tab_itens_pedidos.id_produto FROM tab_produtos 
+INNER JOIN tab_itens_pedidos
+ON tab_produtos.id_produto = tab_itens_pedidos.id_produto
+
+_____________________

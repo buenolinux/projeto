@@ -1,0 +1,1 @@
+adicionar o campo id_cliente na tabela tab_pedidos

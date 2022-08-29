@@ -1,0 +1,34 @@
+CREATE TABLE tab_itens_pedidos (
+ id_pedido smallint NOT NULL,
+ id_produto smallint NOT NULL,
+ id_cliente smallint NOT NULL,
+ qtde tinyint, 
+ PRIMARY KEY (id_pedido, id_produto)
+)
+
+INSERT INTO tab_itens_pedidos (id_pedido, id_produto, id_cliente, qtde)
+VALUES
+(1, 1, 1, 5),
+(1, 3, 1, 3),
+(1, 2, 1, 10);
+
+# Retorna o valor mais recente dos pedidos 
+SELECT MAX(id_pedido)
+FROM tab_itens_pedidos;
+
+INSERT INTO tab_itens_pedidos (id_pedido, id_produto, id_cliente, qtde)
+VALUES
+(2, 1, 2, 5),
+(2, 3, 2, 3),
+(2, 2, 2, 10);
+
+INSERT INTO tab_itens_pedidos (id_pedido, id_produto, id_cliente, qtde)
+VALUES
+(3, 1, 1, 5),
+(3, 3, 1, 3),
+(3, 2, 1, 10);
+
+Chave Primária Composta:
+http://www.bosontreinamentos.com.br/mysql/como-criar-chave-primaria-em-uma-tabela-do-mysql/
+
+http://www.bosontreinamentos.com.br/sql-com-sql-server/criando-uma-chave-primaria-composta-no-sql-server/

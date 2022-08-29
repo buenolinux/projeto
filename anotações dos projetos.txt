@@ -1,0 +1,86 @@
+1.ver alguma forma de alterar cadastro de produto caso ajá falha em cadastro:
+
+-exibir menssagem de aviso indicando se tem certeza que deseja inserir dados preenchidos;
+
+2.Linguagem C# usar TabControl para criar as demais tabelas;
+
+Verificar as configurações da tela(tamanho, botão minimizar,  restaurar e posição da tela)
+_____________________________________________________
+...tela de login: 
+
+-txbNome;
+-txbSenha;
+-btnEntrar;
+-btnSair;
+_____________________________________________________
+...tela de Cadastro de produto:
+
+-cbbFornecedor; 
+
+-txbNomeProduto;
+
+-cbbMarca;
+
+-cbbCategoria;
+
+-cbbAnimal;
+
+-cbbLote;
+
+-txbTamanho null;
+
+-txbMedida;
+
+-txbQuantidade;
+
+-txbPreco;
+
+-txbImagem;
+
+-btnImagem;
+
+-txbDescricao;
+
+-btnCadastrar;
+___________________________________________________________________
+...tela cadastro fornec-edor:
+
+
+-txbTelefone;
+
+-txbFornecedor;
+-rbFornecedor;
+-gbFornecedor;
+
+
+-rbCategoria;
+-gbCategoria;
+-txbCategoria;
+
+-rbMarca;
+-gbMarca;
+-txbMarca;
+
+-rbAnimal;
+-gbAnimal;
+-txbAnimal;
+
+
+-gbAlterar;
+-cbbAlterar;
+-txbAlterar;
+
+-rbSim;
+-rbNão;
+
+-btnCadastrar;
+
+-btnAtualizar;
+_____________________________________________________________________
+-conferme selecionar o radionbutton  vai aparecer um grupeBox correspondente ao que você selecionou.
+ 
+-aparentemente todos os groupbox deve aparecer em uma mesma posição.
+
+-para se fazer uma alteração em um cadastro deve se ultilizar a mesma tela porem estará ultilizando a ligação entre codigos 
+
+
